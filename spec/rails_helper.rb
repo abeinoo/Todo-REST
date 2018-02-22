@@ -22,8 +22,8 @@ RSpec.configure do |config|
   config.before(:all) do
     FactoryBot.reload
   end
-
   config.include RequestSpecHelper
+  config.include ControllerSpecHelper
 
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.use_transactional_fixtures = true
